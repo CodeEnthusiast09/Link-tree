@@ -7,6 +7,17 @@ body {
   font-family: "Inter";
 }
 :root {
-    --gray200: #FAFCF0;
-    --gray500: #667085;
+  --gray200: #fafcf0;
+  --gray500: #667085;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 375px;
+    max-height: 895px;
+    border: 1px solid magenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
