@@ -7,36 +7,107 @@ body {
   font-family: "Inter";
 }
 :root {
-  --gray200: #fafcf0;
+  --gray300: #d0d5dd;
   --gray500: #667085;
+  --gray900: #101828;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   .container {
     max-width: 375px;
     max-height: 895px;
-    border: 1px solid magenta;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .header {
+    border-bottom: 1px solid var(--gray300);
+    margin: 75px 0 35px;
   }
   #more {
     position: relative;
-    left: 110%;
+    top: 20px;
+    left: 85%;
   }
-  .header {
+  .profile {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   #profile {
+    background-image: url("./images/profile__img.png");
+    height: 88px;
+    width: 88px;
+    margin: auto;
+    border-radius: 50%;
     margin-bottom: 25px;
   }
   h1 {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 35px;
+  }
+  .link-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 50px;
+  }
+  .link-cards .cards {
+    width: 345px;
+    height: 65px;
+    background-color: var(--gray300);
+    border-radius: 10px;
+  }
+  a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--gray900);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 25px 0;
+  }
+  .community {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 90px;
+  }
+  .slack {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .footer {
+    display: block;
+    align-self: flex-start;
+    margin-left: 20px;
+  }
+  #red-dot {
+    position: relative;
+    right: 49.5%;
+    top: -3px;
+  }
+  .logo {
+    margin-bottom: 16px;
+  }
+  p {
+    color: var(--gray500);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  #I4G-logo {
+    margin-bottom: 32px;
   }
 }
