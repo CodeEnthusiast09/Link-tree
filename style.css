@@ -11,13 +11,32 @@ body {
   --gray500: #667085;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .container {
-    width: 375px;
+    max-width: 375px;
     max-height: 895px;
     border: 1px solid magenta;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  #more {
+    position: relative;
+    left: 110%;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #profile {
+    margin-bottom: 25px;
+  }
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
   }
 }
