@@ -200,7 +200,7 @@ body {
   }
   .footer {
     display: flex;
-    gap: 250px;
+    gap: 50px;
   }
   #red-dot {
     position: relative;
@@ -219,5 +219,12 @@ body {
   }
   #I4G-logo {
     margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .footer {
+    display: flex;
+    gap: 290px;
   }
 }
