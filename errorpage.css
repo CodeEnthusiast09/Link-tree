@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Inter";
+}
+:root {
+  --gray300: #d0d5dd;
+  --gray500: #667085;
+  --gray900: #101828;
+  --purple: #5925dc;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 500px) {
+  .container {
+    width: 99.5%;
+    max-height: 800px;
+    margin: 100px 0;
+  }
+  .header {
+    width: 90%;
+    padding: 20px;
+  }
+  #error {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 25px;
+  }
+  h1 {
+    margin-bottom: 25px;
+    color: var(--gray900);
+    font-size: 36px;
+  }
+  #error-pg {
+    font-size: 18px;
+    color: var(--gray500);
+    margin-bottom: 25px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .links #back {
+    order: 2;
+  }
+  .links #home {
+    order: 1;
+  }
+  #back {
+    border: 1px solid var(--gray500);
+    border-radius: 15px;
+    height: 48px;
+    margin-bottom: 15px;
+  }
+  #back a {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding-top: 15px;
+    color: var(--gray500);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #arrow {
+    position: relative;
+    top: 2px;
+  }
+  #home {
+    background-color: var(--purple);
+    border-radius: 15px;
+    height: 48px;
+  }
+  #home a {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding-top: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+@media (min-width: 501px) {
+  .container {
+    width: 99.5%;
+    max-height: 690px;
+    margin: 100px 0;
+  }
+  .header {
+    width: 90%;
+    padding: 20px;
+  }
+  #error {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--purple);
+    margin-bottom: 25px;
+  }
+  h1 {
+    margin-bottom: 25px;
+    color: var(--gray900);
+    font-size: 36px;
+  }
+  #error-pg {
+    font-size: 18px;
+    color: var(--gray500);
+    margin-bottom: 45px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .links #back {
+    order: 1;
+  }
+  .links #home {
+    order: 2;
+  }
+  #back {
+    border: 1px solid var(--gray500);
+    border-radius: 15px;
+    width: 164px;
+    height: 60px;
+    order: 1;
+    margin-bottom: 15px;
+  }
+  #back a {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding-top: 20px;
+    color: var(--gray500);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #arrow {
+    position: relative;
+    top: 2px;
+  }
+  #home {
+    background-color: var(--purple);
+    border-radius: 15px;
+    width: 164px;
+    height: 60px;
+  }
+  #home a {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    padding-top: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding-left: 20px;
+  }
+  #red-dot {
+    position: relative;
+    right: 70%;
+    top: -3px;
+  }
+  .logo {
+    margin-bottom: 16px;
+    position: relative;
+    top: 2px;
+  }
+  p {
+    color: var(--gray500);
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  #I4G-logo {
+    margin-bottom: 32px;
+  }
+}
