@@ -241,6 +241,27 @@ body {
       opacity: 1;
     }
   }
+  /* .popup .hide {
+    visibility: hidden;
+    animation: fadeOut 1s;
+  }
+  @-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  } */
   .profile {
     display: flex;
     flex-direction: column;
